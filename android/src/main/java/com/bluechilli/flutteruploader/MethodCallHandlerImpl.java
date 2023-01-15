@@ -89,7 +89,7 @@ public class MethodCallHandlerImpl implements MethodCallHandler {
     String url = call.argument("url");
     String method = call.argument("method");
     List<Map<String, String>> files = call.argument("files");
-    Map<String, String> parameters = call.argument("data");
+    Map<String, Object> parameters = call.argument("data");
     Map<String, String> headers = call.argument("headers");
     String tag = call.argument("tag");
     Boolean allowCellular = call.argument("allowCellular");

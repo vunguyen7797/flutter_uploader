@@ -9,7 +9,7 @@ public class UploadTask {
   private String url;
   private String method;
   private Map<String, String> headers;
-  private Map<String, String> data;
+  private Map<String, Object> data;
   private List<FileItem> files;
   private int requestTimeoutInSeconds;
   private boolean binaryUpload;
@@ -21,7 +21,7 @@ public class UploadTask {
       String method,
       List<FileItem> files,
       Map<String, String> headers,
-      Map<String, String> data,
+      Map<String, Object> data,
       int requestTimeoutInSeconds,
       boolean binaryUpload,
       String tag,
@@ -57,7 +57,7 @@ public class UploadTask {
     return headers;
   }
 
-  public Map<String, String> getParameters() {
+  public Map<String, Object> getParameters() {
     return data;
   }
 

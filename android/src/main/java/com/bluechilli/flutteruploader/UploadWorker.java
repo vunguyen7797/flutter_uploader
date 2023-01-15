@@ -124,7 +124,7 @@ public class UploadWorker extends ListenableWorker implements CountProgressListe
 
     try {
       Map<String, String> headers = null;
-      Map<String, String> parameters = null;
+      Map<String, Object> parameters = null;
       List<FileItem> files = new ArrayList<>();
       Gson gson = new Gson();
       Type type = new TypeToken<Map<String, String>>() {}.getType();

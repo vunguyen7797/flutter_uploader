@@ -276,10 +276,10 @@ public class SwiftFlutterUploaderPlugin: NSObject, FlutterPlugin {
             }
         }
 
-        guard fileCount > 0 else {
-            completionHandler(nil, flutterError)
-            return
-        }
+//         guard fileCount > 0 else {
+//             completionHandler(nil, flutterError)
+//             return
+//         }
 
         let requestId = UUID().uuidString.replacingOccurrences(of: "-", with: "_")
         let requestFile = "\(requestId).req"

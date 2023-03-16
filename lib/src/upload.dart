@@ -51,7 +51,7 @@ class MultipartFormDataUpload extends Upload {
           allowCellular: allowCellular,
         ) {
     // Need to specify either files or data.
-    assert(files!.isNotEmpty || data!.isNotEmpty);
+    assert((files != null && files!.isNotEmpty) || data!.isNotEmpty);
   }
 
   /// files to be uploaded

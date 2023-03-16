@@ -179,15 +179,15 @@ public class UploadWorker extends ListenableWorker implements CountProgressListe
           }
         }
 
-        if (fileExistsCount <= 0) {
-          return Result.failure(
-              createOutputErrorData(
-                  UploadStatus.FAILED,
-                  DEFAULT_ERROR_STATUS_CODE,
-                  "invalid_files",
-                  "There are no items to upload",
-                  null));
-        }
+//        if (fileExistsCount <= 0) {
+//          return Result.failure(
+//              createOutputErrorData(
+//                  UploadStatus.FAILED,
+//                  DEFAULT_ERROR_STATUS_CODE,
+//                  "invalid_files",
+//                  "There are no items to upload",
+//                  null));
+//        }
 
         innerRequestBody = formRequestBuilder.build();
       }

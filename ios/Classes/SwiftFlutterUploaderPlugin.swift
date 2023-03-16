@@ -113,10 +113,10 @@ public class SwiftFlutterUploaderPlugin: NSObject, FlutterPlugin {
             return
         }
 
-        if files.isEmpty {
-            result(FlutterError(code: "invalid_files", message: "There are no items to upload", details: nil))
-            return
-        }
+//         if files.isEmpty {
+//             result(FlutterError(code: "invalid_files", message: "There are no items to upload", details: nil))
+//             return
+//         }
 
         guard let url = URL(string: urlString) else {
             result(FlutterError(code: "invalid_url", message: "url is not a valid url", details: nil))

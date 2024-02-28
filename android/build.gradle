@@ -25,6 +25,7 @@ android {
     compileSdkVersion 31
 
     defaultConfig {
+        namespace "com.bluechilli.flutteruploader"
         minSdkVersion 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

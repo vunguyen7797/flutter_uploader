@@ -102,10 +102,10 @@ public class MethodCallHandlerImpl implements MethodCallHandler {
       method = "POST";
     }
 
-    if (files == null || files.isEmpty()) {
-      result.error("invalid_call", "Invalid call parameters passed", null);
-      return;
-    }
+//    if (files == null || files.isEmpty()) {
+//      result.error("invalid_call", "Invalid call parameters passed", null);
+//      return;
+//    }
 
     if (!VALID_HTTP_METHODS.contains(method.toUpperCase())) {
       result.error("invalid_method", "Method must be either POST | PUT | PATCH", null);
